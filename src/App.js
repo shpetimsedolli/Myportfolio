@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
 import "./Apps.css";
-import "./responsive.css";
 
 import { Navbar, Main } from "./components";
-
+import "animate.css";
+import "./responsive.css";
 const App = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div>
       <Navbar />

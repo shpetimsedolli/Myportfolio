@@ -19,17 +19,17 @@ const Navbar = () => {
         <ul className="links">
           <Menu />
         </ul>
-        <div className="toggle-button">
+        <div className="toggle-button ">
           {toggleMenu ? (
             <RiCloseLine
               color="#fff"
-              size={40}
+              size={30}
               onClick={() => setToggleMenu(false)}
             />
           ) : (
             <RiMenu3Line
               color="#fff"
-              size={40}
+              size={30}
               onClick={() => setToggleMenu(true)}
             />
           )}
