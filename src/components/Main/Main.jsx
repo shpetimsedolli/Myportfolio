@@ -7,8 +7,12 @@ const Main = () => {
       <div className="container">
         <span className="top_text">HI!</span>
         <h1>I am Shpetim Sedolli</h1>
-        <span className="bottom_text">Web Developer</span>
-        <button className="github_btn">Visit my Work!</button>
+        <p className="bottom_text">Web Developer</p>
+        <button className="btn-31">
+          <span className="text-container">
+            <span className="text">Visit Me!</span>
+          </span>
+        </button>
       </div>
     </div>
   );
