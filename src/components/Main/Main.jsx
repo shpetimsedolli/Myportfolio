@@ -15,11 +15,17 @@ const Main = () => {
         <p className="bottom_text ">
           {text} <Cursor />
         </p>
-        <button className="btn-31">
-          <span className="text-container">
-            <span className="text">Visit my Work!</span>
-          </span>
-        </button>
+        <a
+          href={"https://www.github.com/shpetimsedolli"}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="btn-31">
+            <span className="text-container">
+              <span className="text">Visit my Work!</span>
+            </span>
+          </button>
+        </a>
       </div>
     </div>
   );
