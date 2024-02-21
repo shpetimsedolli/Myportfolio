@@ -1,13 +1,13 @@
 import React from "react";
 import "./Apps.css";
 
-import { Navbar } from "./components";
+import { Navbar, Main } from "./components";
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      Hello
+      <Main />
     </div>
   );
 };
