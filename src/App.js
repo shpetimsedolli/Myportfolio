@@ -4,11 +4,14 @@ import "./Apps.css";
 
 import { Navbar, Main } from "./components";
 import "animate.css";
+import "typed.js";
 import "./responsive.css";
+
 const App = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
+
   return (
     <div>
       <Navbar />
