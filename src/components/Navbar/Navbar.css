@@ -1,0 +1,22 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.toggle-button {
+  display: none;
+}
+.links {
+  display: flex;
+  gap: 30px;
+}
+.links a {
+  font-weight: 500;
+  text-decoration: none;
+}
