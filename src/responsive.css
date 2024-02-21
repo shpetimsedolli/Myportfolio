@@ -1,0 +1,27 @@
+@media (max-width: 800px) {
+  .navbar {
+    justify-content: end;
+  }
+  .links {
+    display: none;
+  }
+  .active {
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    top: 90px;
+    right: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+  }
+  .toggle-button {
+    font-size: 40px;
+    display: block;
+    display: flex;
+    justify-content: end;
+  }
+}

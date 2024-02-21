@@ -32,7 +32,6 @@ h1 {
 
 .btn-31 {
   -webkit-tap-highlight-color: transparent;
-
   background-color: #000;
   background-image: none;
   color: #fff;
@@ -44,7 +43,6 @@ h1 {
   font-weight: 900;
   line-height: 1.5;
   margin: 0;
-
   padding: 0;
 }
 
@@ -89,9 +87,9 @@ h1 {
   content: "";
   inset: 0;
   position: absolute;
-  transition: -webkit-clip-path 0.2s ease;
-  transition: clip-path 0.2s ease;
-  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+  transition: -webkit-clip-path 0.4s ease;
+  transition: clip-path 0.4s ease;
+  transition: clip-path 0.4s ease, -webkit-clip-path 0.4s ease;
 }
 
 .btn-31:hover:before {

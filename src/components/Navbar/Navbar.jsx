@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { RiMenu3Line, RiCloseLine, RiBold } from "react-icons/ri";
 
 const Menu = () => (
   <>
@@ -22,14 +22,14 @@ const Navbar = () => {
         <div className="toggle-button">
           {toggleMenu ? (
             <RiCloseLine
-              color="#000"
-              size={27}
+              color="#fff"
+              size={40}
               onClick={() => setToggleMenu(false)}
             />
           ) : (
             <RiMenu3Line
-              color="#000"
-              size={27}
+              color="#fff"
+              size={40}
               onClick={() => setToggleMenu(true)}
             />
           )}
