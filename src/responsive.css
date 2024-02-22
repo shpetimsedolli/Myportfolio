@@ -47,11 +47,40 @@
     display: flex;
     justify-content: center;
   }
+  .aboutwrap {
+    flex-direction: column;
+    text-align: center;
+  }
+  .aboutwrap img {
+    width: 280px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .servicewrap {
+    padding: 0px 40px;
+  }
 }
 
 /* This media query is used only for small tablet devices */
 @media only screen and (min-width: 768px) and (max-width: 990px) {
+  .aboutwrap {
+    flex-direction: column;
+    text-align: center;
+  }
+  .aboutwrap img {
+    width: 350px;
+  }
+  .servicewrap {
+    padding: 0px 35px;
+  }
 }
 /* This media query is used only for big tablet devices */
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
+  .aboutwrap img {
+    width: 450px;
+  }
+  .servicewrap {
+    padding: 0px 40px;
+  }
 }

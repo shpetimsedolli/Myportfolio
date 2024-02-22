@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div>
       <div className="container">
-        {/* <div className="aboutwrap">
+        <div className="aboutwrap">
           <img src={aboutimage} alt="AboutImage" />
           <div className="about__content">
             <span>Who am I</span>
@@ -22,7 +22,7 @@ const About = () => {
             </p>
             <button className="download__btn">Download CV</button>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

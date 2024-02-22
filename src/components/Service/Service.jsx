@@ -21,14 +21,7 @@ const Service = () => {
         },
       },
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480,
+        breakpoint: 680,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -38,7 +31,7 @@ const Service = () => {
   };
   return (
     <div className="about">
-      {/* <div className="container">
+      <div className="container">
         <h1 className="about__title">Skills</h1>
         <div className="servicewrap">
           <Slider {...settings}>
@@ -87,9 +80,18 @@ const Service = () => {
                 organized development processes.
               </p>
             </div>
+            <div className="service__box">
+              <i className="fa-brands fa-react"></i>
+              <h4>React</h4>
+              <p className="subtitle">
+                Committed to staying updated with React's latest features and
+                best practices, I continuously seek to enhance my skills and
+                contribute to the succes of innovative projects.
+              </p>
+            </div>
           </Slider>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
