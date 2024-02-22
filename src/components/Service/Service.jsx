@@ -12,10 +12,34 @@ const Service = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
-    <div>
-      <div className="container">
+    <div className="about">
+      {/* <div className="container">
+        <h1 className="about__title">Skills</h1>
         <div className="servicewrap">
           <Slider {...settings}>
             <div className="service__box">
@@ -65,7 +89,7 @@ const Service = () => {
             </div>
           </Slider>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

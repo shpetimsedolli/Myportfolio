@@ -1,5 +1,5 @@
 .servicewrap {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .service__box {
   display: flex !important;
@@ -60,4 +60,7 @@
 .slick-dots li button:before {
   font-size: 15px;
   margin-top: 20px;
+}
+.about__title {
+  text-align: center;
 }

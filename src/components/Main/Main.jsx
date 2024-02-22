@@ -16,6 +16,7 @@ const Main = () => {
           {text} <Cursor />
         </p>
         <a
+          className="main__btn"
           href={"https://www.github.com/shpetimsedolli"}
           target="_blank"
           rel="noreferrer"

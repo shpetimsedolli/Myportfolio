@@ -1,4 +1,5 @@
-@media (max-width: 800px) {
+/* This media query is used only for mobile devices */
+@media only screen and (max-width: 767px) {
   .navbar {
     justify-content: end;
   }
@@ -34,4 +35,23 @@
     display: flex;
     justify-content: flex-end;
   }
+  .Main h1 {
+    font-size: 40px;
+  }
+  .bottom_text,
+  .top_text {
+    font-size: 35px;
+  }
+  .main__btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* This media query is used only for small tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+}
+/* This media query is used only for big tablet devices */
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
 }
