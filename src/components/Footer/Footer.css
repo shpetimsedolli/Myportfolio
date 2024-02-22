@@ -1,0 +1,27 @@
+.footerwrap {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dee2e6;
+  padding: 25px 0px;
+  align-items: center;
+}
+.social__icons a i {
+  text-decoration: none;
+  font-size: 30px;
+  color: #000;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 25px;
+  transition: 0.4s all;
+}
+.social__icons a {
+  margin-right: 50px;
+}
+.social__icons a:last-child {
+  margin-right: 0px;
+}
+.social__icons a i:hover {
+  color: #fff;
+  background-color: #000;
+}
