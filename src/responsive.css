@@ -60,6 +60,28 @@
   .servicewrap {
     padding: 0px 40px;
   }
+  .hirewrap {
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px;
+  }
+  .hire__content h5 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .hire__content p {
+    text-align: center;
+  }
+  .hire__btn button {
+    padding: 15px 35px;
+    font-size: 15px;
+  }
+  .footerwrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 
 /* This media query is used only for small tablet devices */
@@ -73,6 +95,13 @@
   }
   .servicewrap {
     padding: 0px 35px;
+  }
+  .hire__content h5 {
+    font-size: 30px;
+  }
+  .hire__btn button {
+    padding: 15px 35px;
+    font-size: 15px;
   }
 }
 /* This media query is used only for big tablet devices */
