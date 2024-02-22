@@ -1,0 +1,27 @@
+.hire {
+  margin: 100px 0px;
+  background: linear-gradient(
+    90deg,
+    rgba(135, 151, 187, 1) 24%,
+    rgba(212, 223, 240, 1) 50%,
+    rgba(101, 117, 163, 1) 85%,
+    rgba(74, 91, 145, 1) 100%
+  );
+}
+.hirewrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+.hire__content h5 {
+  font-size: 45px;
+}
+.hire__btn button {
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 5px;
+  font-size: 20px;
+}

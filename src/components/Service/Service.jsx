@@ -32,8 +32,11 @@ const Service = () => {
   return (
     <div className="about">
       <div className="container">
-        <h1 className="about__title">Skills</h1>
-        <div className="servicewrap">
+        <h1 className="about__title" data-aos="fade-left">
+          {" "}
+          Skills
+        </h1>
+        <div className="servicewrap" data-aos="zoom-in">
           <Slider {...settings}>
             <div className="service__box">
               <i className="fa-brands fa-html5"></i>
@@ -56,10 +59,9 @@ const Service = () => {
               <i className="fa-brands fa-js"></i>
               <h4>Javascript</h4>
               <p className="subtitle">
-                Encompasses frond-end, empowering me to create dynamic and
-                interactive web experiences. With a solid understanding of core
-                JavaScript concepts such as variables , functions and control
-                flow.
+                Empowering to create dynamic and interactive web experiences.
+                With a solid understanding of core JavaScript concepts such as
+                variables , functions and control flow.
               </p>
             </div>
             <div className="service__box">
@@ -87,6 +89,14 @@ const Service = () => {
                 Committed to staying updated with React's latest features and
                 best practices, I continuously seek to enhance my skills and
                 contribute to the succes of innovative projects.
+              </p>
+            </div>
+            <div className="service__box">
+              <i className="fa-brands fa-figma"></i>
+              <h4>UI/UX principles</h4>
+              <p className="subtitle">
+                Strong understanding of UI/UX principles and the ability to
+                translate designs into executable code.
               </p>
             </div>
           </Slider>

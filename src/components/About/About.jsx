@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div>
       <div className="container">
-        <div className="aboutwrap">
+        <div className="aboutwrap" data-aos="fade-left">
           <img src={aboutimage} alt="AboutImage" />
           <div className="about__content">
             <span>Who am I</span>
