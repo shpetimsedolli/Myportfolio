@@ -1,0 +1,31 @@
+.servicewrap {
+  margin-top: 100px;
+}
+.service__box {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 230px;
+  border: 1px solid #dee2e6;
+  gap: 20px;
+  position: relative;
+}
+.service__box i {
+  font-size: 4rem;
+}
+.subtitle {
+  position: absolute;
+  bottom: 100px;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.slick-slide > div {
+  margin: 0px 10px;
+}
+.slick-prev {
+  background-color: #000 !important;
+  font-size: 40px !important;
+}
