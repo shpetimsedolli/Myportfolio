@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "./Apps.css";
 
-import { Navbar, Main } from "./components";
+import { Navbar, Main, About } from "./components";
 import "animate.css";
 import "typed.js";
 import "./responsive.css";
@@ -16,6 +16,7 @@ const App = () => {
     <div>
       <Navbar />
       <Main />
+      <About />
     </div>
   );
 };

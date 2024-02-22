@@ -32,6 +32,6 @@
     font-size: 40px;
     display: block;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
