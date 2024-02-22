@@ -2,10 +2,10 @@ import React from "react";
 import "./Form.css";
 const Form = () => {
   return (
-    <div>
+    <div id="contact">
       <div className="container">
         <form action="">
-          <div className="formwrap">
+          <div className="formwrap" data-aos="fade-up">
             <div className="inputwrap">
               <input type="text" placeholder="Your Name" className="input1" />
               <input

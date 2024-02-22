@@ -16,6 +16,12 @@
   display: flex;
   gap: 30px;
 }
+.scrolled {
+  background: #fff;
+}
+.scrolled .links a {
+  color: #000;
+}
 .links a {
   font-weight: 500;
   font-size: 20px;

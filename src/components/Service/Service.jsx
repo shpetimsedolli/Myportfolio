@@ -1,5 +1,4 @@
 import React from "react";
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -32,11 +31,8 @@ const Service = () => {
   return (
     <div className="about">
       <div className="container">
-        <h1 className="about__title" data-aos="fade-left">
-          {" "}
-          Skills
-        </h1>
-        <div className="servicewrap" data-aos="zoom-in">
+        <h1 className="about__title">Skills</h1>
+        <div className="servicewrap" data-aos="fade-up">
           <Slider {...settings}>
             <div className="service__box">
               <i className="fa-brands fa-html5"></i>

@@ -5,7 +5,7 @@ const Hire = () => {
   return (
     <div className="hire">
       <div className="container">
-        <div className="hirewrap">
+        <div className="hirewrap" data-aos="fade-up">
           <div className="hire__content">
             <h5>Want to work with me?</h5>
             <p>Always feel free to Contact & Hire me</p>
