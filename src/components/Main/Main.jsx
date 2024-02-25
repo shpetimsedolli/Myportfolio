@@ -8,7 +8,7 @@ const Main = () => {
     loop: {},
   });
   return (
-    <div className="Main">
+    <div className="Main" id="main">
       <div className="container animate__animated animate__fadeInLeft">
         <span className="top_text">HI!</span>
         <h1>I am Shpetim Sedolli</h1>

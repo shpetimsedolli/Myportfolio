@@ -4,7 +4,7 @@ import aboutimage from "../../assets/about.png";
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <div className="container">
         <div className="aboutwrap" data-aos="fade-up">
           <img src={aboutimage} alt="AboutImage" />

@@ -29,7 +29,7 @@ const Service = () => {
     ],
   };
   return (
-    <div className="about">
+    <div className="about" id="skills">
       <div className="container">
         <h1 className="about__title">Skills</h1>
         <div className="servicewrap" data-aos="fade-up">
