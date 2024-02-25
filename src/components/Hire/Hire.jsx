@@ -11,7 +11,7 @@ const Hire = () => {
             <p>Always feel free to Contact & Hire me</p>
           </div>
           <div className="hire__btn">
-            <button>Hire Me</button>
+            <a href="#contact">Hire Me</a>
           </div>
         </div>
       </div>
