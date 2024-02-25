@@ -20,7 +20,13 @@ const About = () => {
               contribute expertise and creativity to drive the success of
               innovative projects. For more download my CV right below.
             </p>
-            <button className="download__btn">Download CV</button>
+            <a
+              className="download__btn"
+              href="https://drive.google.com/file/d/1eG8f1xNOr23BKa8zlcBEUpQ5Iom4AJw4/view?usp=sharing"
+              target="_blank"
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </div>
