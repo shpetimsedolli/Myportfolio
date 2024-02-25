@@ -24,6 +24,7 @@ const About = () => {
               className="download__btn"
               href="https://drive.google.com/file/d/1eG8f1xNOr23BKa8zlcBEUpQ5Iom4AJw4/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
             >
               Download CV
             </a>

@@ -8,28 +8,40 @@
   max-width: 700px;
   margin: 0 auto;
 }
+
 .inputwrap {
   display: flex;
   width: 100%;
   gap: 20px;
 }
+
 .inputwrap input {
   width: 50%;
   height: 40px;
   padding-left: 20px;
 }
+
 .textarea3 {
   width: calc(100% - 20px);
   padding-left: 20px;
   padding-top: 10px;
 }
+
 .form__message button {
   background: transparent;
   color: #000;
   font-size: 15px;
   border-radius: 10px;
   padding: 10px;
+  transition: 0.4s all;
 }
+
+.form__message button:hover {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
 .form__message {
   display: grid;
   place-items: center;
