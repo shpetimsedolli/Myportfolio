@@ -89,6 +89,12 @@
     justify-content: center;
     gap: 10px;
   }
+  .boxeswrap {
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 50%;
+  }
 }
 
 /* This media query is used only for small tablet devices */

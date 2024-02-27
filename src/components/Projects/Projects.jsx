@@ -12,7 +12,7 @@ const Projects = () => {
         <p>
           Here are a few past design projects I've worked on. Want to see more{" "}
         </p>
-        <a href="#form">Email me</a>
+        <a href="#contact">Email me</a>
       </div>
       <div className="boxeswrap">
         <div className="box">

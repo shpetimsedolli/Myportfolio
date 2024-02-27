@@ -46,7 +46,7 @@ const Form = () => {
               name="message"
               cols="30"
               rows="10"
-              defaultValue="Write something!"
+              placeholder="Write something!"
               className="textarea3"
             ></textarea>
             <div className="form__message">
