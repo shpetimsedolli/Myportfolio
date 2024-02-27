@@ -15,6 +15,7 @@ const Form = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);

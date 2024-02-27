@@ -6,7 +6,7 @@ import box3 from "../../assets/box3.jpg";
 
 const Projects = () => {
   return (
-    <div className="container">
+    <div className="container" data-aos="fade-up">
       <h1 className="project__title">Recent Work</h1>
       <div className="project__content">
         <p>

@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Service.css";
+import tailwind from "../../assets/tailwind.png";
 
 const Service = () => {
   const settings = {
@@ -93,6 +94,14 @@ const Service = () => {
               <p className="subtitle">
                 Strong understanding of UI/UX principles and the ability to
                 translate designs into executable code.
+              </p>
+            </div>
+            <div className="service__box">
+              <img src={tailwind} className="tailwindlogo" alt="" />
+              <h4>TailwindCSS</h4>
+              <p className="subtitle">
+                Proficient in leveraging Tailwind CSS to streamline front-end, I
+                bring a dynamic skill set to the table.
               </p>
             </div>
           </Slider>

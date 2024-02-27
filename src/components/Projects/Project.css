@@ -6,7 +6,7 @@
 }
 .project__title {
   text-align: center;
-  margin-top: 75px;
+  margin-top: 150px;
 }
 .project__content {
   display: flex;
@@ -64,5 +64,5 @@
   opacity: 1;
 }
 .box:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
