@@ -1,0 +1,13 @@
+.project__title {
+  text-align: center;
+  margin-top: 75px;
+}
+.project__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.overlay {
+  display: none;
+}
