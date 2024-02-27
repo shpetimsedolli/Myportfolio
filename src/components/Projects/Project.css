@@ -1,3 +1,9 @@
+.boxeswrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 .project__title {
   text-align: center;
   margin-top: 75px;
@@ -7,7 +13,56 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 100px;
+}
+.box img {
+  width: 100%;
+  border-radius: 25px;
+  height: 215px;
+  object-fit: cover;
 }
 .overlay {
-  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 25px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000000bf;
+}
+.overlay__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.overlay__content a {
+  background-color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #000;
+}
+.overlay__content h3 {
+  color: #fff;
+}
+.box {
+  position: relative;
+  transition: 0.5s ease;
+  width: 33.33333%;
+}
+
+.box:hover .overlay {
+  opacity: 1;
+}
+.box:hover {
+  transform: scale(1.1);
 }
