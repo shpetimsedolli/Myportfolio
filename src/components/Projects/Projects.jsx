@@ -3,7 +3,7 @@ import "./Project.css";
 import box1 from "../../assets/box1.jpg";
 import box2 from "../../assets/box2.jpg";
 import box3 from "../../assets/box3.jpg";
-
+import box4 from "../../assets/box4.jpg";
 const Projects = () => {
   return (
     <div className="container" data-aos="fade-up">
@@ -15,7 +15,7 @@ const Projects = () => {
         <a href="#contact">Email me</a>
       </div>
       <div className="boxeswrap">
-        <div className="box">
+        <div className="box" data-aos="fade-right">
           <img src={box1} alt="" />
           <div className="overlay">
             <div className="overlay__content">
@@ -30,7 +30,22 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="box">
+        <div className="box" data-aos="fade-left">
+          <img src={box4} alt="" />
+          <div className="overlay">
+            <div className="overlay__content">
+              <h3>HooBank React/Tailwind</h3>
+              <a
+                href="https://github.com/shpetimsedolli/secondTailwindCSS.git"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="box" data-aos="fade-right">
           <img src={box2} alt="" />
           <div className="overlay">
             <div className="overlay__content">
@@ -45,7 +60,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="box">
+        <div className="box" data-aos="fade-left">
           <img src={box3} alt="" />
           <div className="overlay">
             <div className="overlay__content">

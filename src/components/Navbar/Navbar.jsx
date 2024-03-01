@@ -2,12 +2,20 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
-const Menu = () => (
+const Menu = ({ onCloseMenu }) => (
   <>
-    <a href="#main">Main</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+    <a href="#main" onClick={onCloseMenu}>
+      Main
+    </a>
+    <a href="#about" onClick={onCloseMenu}>
+      About
+    </a>
+    <a href="#skills" onClick={onCloseMenu}>
+      Skills
+    </a>
+    <a href="#contact" onClick={onCloseMenu}>
+      Contact
+    </a>
   </>
 );
 
@@ -26,6 +34,10 @@ const Navbar = () => {
     });
   }, []);
 
+  const handleCloseMenu = () => {
+    setToggleMenu(false);
+  };
+
   return (
     <div className="navwrap">
       <div className="container">
@@ -36,6 +48,7 @@ const Navbar = () => {
           <div className="toggle-button ">
             {toggleMenu ? (
               <RiCloseLine
+                className="closeline"
                 color="#000"
                 size={30}
                 onClick={() => setToggleMenu(false)}
@@ -49,7 +62,7 @@ const Navbar = () => {
             )}
             {toggleMenu && (
               <ul className="links active">
-                <Menu />
+                <Menu onCloseMenu={handleCloseMenu} />
               </ul>
             )}
           </div>

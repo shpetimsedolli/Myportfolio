@@ -18,7 +18,7 @@ import "./responsive.css";
 
 const App = () => {
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 1700 });
   }, []);
 
   return (

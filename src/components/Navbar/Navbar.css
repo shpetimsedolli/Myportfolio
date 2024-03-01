@@ -22,6 +22,10 @@
 .scrolled .links a {
   color: #000;
 }
+.closeline {
+  position: absolute;
+  z-index: 35;
+}
 .links a {
   font-weight: 500;
   font-size: 20px;
