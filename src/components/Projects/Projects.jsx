@@ -5,7 +5,12 @@ import box2 from "../../assets/box2.jpg";
 import box3 from "../../assets/box3.jpg";
 import box4 from "../../assets/box4.jpg";
 import box5 from "../../assets/box5.jpg";
+import box1click from "../../assets/box1click.png";
+import box2click from "../../assets/box2click.png";
+import box3click from "../../assets/box3click.png";
+import box4click from "../../assets/box4click.png";
 import box5click from "../../assets/box5click.png";
+
 const Popup = ({ image, onClose }) => {
   return (
     <div className="popup">
@@ -55,19 +60,18 @@ const Projects = () => {
               </a>
               <button
                 className="btn_github"
-                onClick={() => togglePopup(box5click)}
+                onClick={() => togglePopup(box1click)}
               >
                 Show Full Image
               </button>
             </div>
           </div>
         </div>
-
         <div className="box" data-aos="fade-left">
           <img src={box1} alt="" />
           <div className="overlay">
             <div className="overlay__content">
-              <h3>Ecommerce</h3>
+              <h3>Real data Using TailwindCSS</h3>
               <a
                 className="btn_github"
                 href="https://github.com/shpetimsedolli/tailwindcsproject"
@@ -78,14 +82,13 @@ const Projects = () => {
               </a>
               <button
                 className="btn_github"
-                onClick={() => togglePopup(box5click)}
+                onClick={() => togglePopup(box2click)}
               >
                 Show Full Image
               </button>
             </div>
           </div>
         </div>
-
         <div className="box" data-aos="fade-right">
           <img src={box4} alt="" />
           <div className="overlay">
@@ -101,14 +104,13 @@ const Projects = () => {
               </a>
               <button
                 className="btn_github"
-                onClick={() => togglePopup(box5click)}
+                onClick={() => togglePopup(box3click)}
               >
                 Show Full Image
               </button>
             </div>
           </div>
         </div>
-
         <div className="box" data-aos="fade-left">
           <img src={box2} alt="" />
           <div className="overlay">
@@ -122,10 +124,16 @@ const Projects = () => {
               >
                 View Code on Github
               </a>
+              <button
+                className="btn_github"
+                onClick={() => togglePopup(box4click)}
+              >
+                Show Full Image
+              </button>
             </div>
           </div>
         </div>
-        <div className="box" data-aos="fade-left">
+        <div className="box" data-aos="fade-up">
           <img src={box3} alt="" />
           <div className="overlay">
             <div className="overlay__content">
@@ -138,6 +146,12 @@ const Projects = () => {
               >
                 View Code on Github
               </a>
+              <button
+                className="btn_github"
+                onClick={() => togglePopup(box5click)}
+              >
+                Show Full Image
+              </button>
             </div>
           </div>
         </div>
