@@ -1,12 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Project.css";
 import box1 from "../../assets/box1.jpg";
 import box2 from "../../assets/box2.jpg";
 import box3 from "../../assets/box3.jpg";
 import box4 from "../../assets/box4.jpg";
+import image1 from "../../assets/image1.png";
+const Popup = ({ image, onClose }) => {
+  return (
+    <div className="popup">
+      <div className="popup-inner">
+        <img src={image} className="popup-image" onClick={onClose} alt="" />
+        <h1 className="text-overlay">Click Anywhere on Image to Close</h1>
+      </div>
+    </div>
+  );
+};
+
 const Projects = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const togglePopup = () => {
+    setSelectedImage(images);
+    setShowPopup(!showPopup);
+  };
+
+  const images = [image1];
   return (
     <div className="container" data-aos="fade-up">
+      {showPopup && (
+        <Popup image={selectedImage} onClose={() => setShowPopup(false)} />
+      )}
+      {/* Pass selectedImage and toggle function */}
       <h1 className="project__title">Recent Work</h1>
       <div className="project__content">
         <p>
@@ -15,47 +40,66 @@ const Projects = () => {
         <a href="#contact">Email me</a>
       </div>
       <div className="boxeswrap">
-        <div className="box" data-aos="fade-right">
-          <img src={box1} alt="" />
-          <div className="overlay">
-            <div className="overlay__content">
-              <h3>TailwindCSS Project</h3>
-              <a
-                href="https://github.com/shpetimsedolli/tailwindcsproject"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View More
-              </a>
+        {images.map((image) => (
+          <div className="box" data-aos="fade-right">
+            <img src={box1} alt="" />
+            <div className="overlay">
+              <div className="overlay__content">
+                <h3>Ecommerce</h3>
+                <a
+                  className="btn_github"
+                  href="https://github.com/shpetimsedolli/tailwindcsproject"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Code on Github
+                </a>
+                <button
+                  className="btn_github"
+                  onClick={() => togglePopup(image)}
+                >
+                  Show Full Image
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="box" data-aos="fade-left">
-          <img src={box4} alt="" />
-          <div className="overlay">
-            <div className="overlay__content">
-              <h3>HooBank React/Tailwind</h3>
-              <a
-                href="https://github.com/shpetimsedolli/secondTailwindCSS.git"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View More
-              </a>
+        ))}
+        {images.map((image) => (
+          <div className="box" data-aos="fade-left">
+            <img src={box4} alt="" />
+            <div className="overlay">
+              <div className="overlay__content">
+                <h3>HooBank React/Tailwind</h3>
+                <a
+                  className="btn_github"
+                  href="https://github.com/shpetimsedolli/tailwindcsproject"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Code on Github
+                </a>
+                <button
+                  className="btn_github"
+                  onClick={() => togglePopup(image)}
+                >
+                  Show Full Image
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
         <div className="box" data-aos="fade-right">
           <img src={box2} alt="" />
           <div className="overlay">
             <div className="overlay__content">
               <h3>ReactJs Project</h3>
               <a
+                className="btn_github"
                 href="https://github.com/shpetimsedolli/tailwindcsproject"
                 target="_blank"
                 rel="noreferrer"
               >
-                View More
+                View Code on Github
               </a>
             </div>
           </div>
@@ -66,11 +110,12 @@ const Projects = () => {
             <div className="overlay__content">
               <h3>Animation Project</h3>
               <a
+                className="btn_github"
                 href="https://github.com/shpetimsedolli/tailwindcsproject"
                 target="_blank"
                 rel="noreferrer"
               >
-                View More
+                View Code on Github
               </a>
             </div>
           </div>
