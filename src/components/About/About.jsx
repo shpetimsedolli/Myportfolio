@@ -7,7 +7,7 @@ const About = () => {
     <div id="about">
       <div className="container">
         <div className="aboutwrap" data-aos="fade-up">
-          <img src={aboutimage} alt="AboutImage" />
+          <img src={aboutimage} className="about__img" alt="AboutImage" />
           <div className="about__content">
             <span>Who am I</span>
             <h1>About Me</h1>

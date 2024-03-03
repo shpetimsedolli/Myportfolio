@@ -4,12 +4,15 @@
   margin: 50px 0px;
   align-items: center;
 }
+.about__img {
+  width: 450px;
+}
 
 .download__btn {
   background-color: transparent;
   color: #000;
   border-radius: 25px;
-  padding: 20px 40px;
+  padding: 10px 30px;
   outline: 0;
   border: 1px solid #000;
   text-decoration: none;

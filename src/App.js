@@ -11,6 +11,7 @@ import {
   Form,
   Footer,
   Projects,
+  ScrollToTop,
 } from "./components";
 import "animate.css";
 import "typed.js";
@@ -23,6 +24,7 @@ const App = () => {
 
   return (
     <div>
+      <ScrollToTop />
       <Navbar />
       <Main />
       <About />
