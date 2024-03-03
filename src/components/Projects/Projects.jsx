@@ -4,7 +4,8 @@ import box1 from "../../assets/box1.jpg";
 import box2 from "../../assets/box2.jpg";
 import box3 from "../../assets/box3.jpg";
 import box4 from "../../assets/box4.jpg";
-import image1 from "../../assets/image1.png";
+import box5 from "../../assets/box5.jpg";
+import box5click from "../../assets/box5click.png";
 const Popup = ({ image, onClose }) => {
   return (
     <div className="popup">
@@ -20,12 +21,11 @@ const Projects = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const togglePopup = () => {
-    setSelectedImage(images);
+  const togglePopup = (image) => {
+    setSelectedImage(image);
     setShowPopup(!showPopup);
   };
 
-  const images = [image1];
   return (
     <div className="container" data-aos="fade-up">
       {showPopup && (
@@ -40,55 +40,76 @@ const Projects = () => {
         <a href="#contact">Email me</a>
       </div>
       <div className="boxeswrap">
-        {images.map((image) => (
-          <div className="box" data-aos="fade-right">
-            <img src={box1} alt="" />
-            <div className="overlay">
-              <div className="overlay__content">
-                <h3>Ecommerce</h3>
-                <a
-                  className="btn_github"
-                  href="https://github.com/shpetimsedolli/tailwindcsproject"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Code on Github
-                </a>
-                <button
-                  className="btn_github"
-                  onClick={() => togglePopup(image)}
-                >
-                  Show Full Image
-                </button>
-              </div>
-            </div>
-          </div>
-        ))}
-        {images.map((image) => (
-          <div className="box" data-aos="fade-left">
-            <img src={box4} alt="" />
-            <div className="overlay">
-              <div className="overlay__content">
-                <h3>HooBank React/Tailwind</h3>
-                <a
-                  className="btn_github"
-                  href="https://github.com/shpetimsedolli/tailwindcsproject"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Code on Github
-                </a>
-                <button
-                  className="btn_github"
-                  onClick={() => togglePopup(image)}
-                >
-                  Show Full Image
-                </button>
-              </div>
-            </div>
-          </div>
-        ))}
         <div className="box" data-aos="fade-right">
+          <img src={box5} alt="" />
+          <div className="overlay">
+            <div className="overlay__content">
+              <h3>Ecommerce using TailwindCSS</h3>
+              <a
+                className="btn_github"
+                href="https://github.com/shpetimsedolli/ecommerce"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Code on Github
+              </a>
+              <button
+                className="btn_github"
+                onClick={() => togglePopup(box5click)}
+              >
+                Show Full Image
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="box" data-aos="fade-left">
+          <img src={box1} alt="" />
+          <div className="overlay">
+            <div className="overlay__content">
+              <h3>Ecommerce</h3>
+              <a
+                className="btn_github"
+                href="https://github.com/shpetimsedolli/tailwindcsproject"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Code on Github
+              </a>
+              <button
+                className="btn_github"
+                onClick={() => togglePopup(box5click)}
+              >
+                Show Full Image
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="box" data-aos="fade-right">
+          <img src={box4} alt="" />
+          <div className="overlay">
+            <div className="overlay__content">
+              <h3>HooBank React/Tailwind</h3>
+              <a
+                className="btn_github"
+                href="https://github.com/shpetimsedolli/tailwindcsproject"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Code on Github
+              </a>
+              <button
+                className="btn_github"
+                onClick={() => togglePopup(box5click)}
+              >
+                Show Full Image
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="box" data-aos="fade-left">
           <img src={box2} alt="" />
           <div className="overlay">
             <div className="overlay__content">
