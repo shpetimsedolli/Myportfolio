@@ -33,7 +33,6 @@ const Projects = () => {
 
   return (
     <>
-      {" "}
       {showPopup && (
         <Popup image={selectedImage} onClose={() => setShowPopup(false)} />
       )}
@@ -42,7 +41,7 @@ const Projects = () => {
         <h1 className="project__title">Recent Work</h1>
         <div className="project__content">
           <p>
-            Here are a few past design projects I've worked on. Want to see more{" "}
+            Here are a few past design projects I've worked on. Want to see more
           </p>
           <a href="#contact">Email me</a>
         </div>
