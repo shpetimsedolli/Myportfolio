@@ -1,5 +1,6 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import video from "../../assets/loop.mp4";
 
 import "./Main.css";
 const Main = () => {
@@ -9,6 +10,7 @@ const Main = () => {
   });
   return (
     <div className="Main" id="main">
+      <video autoPlay src={video} muted loop id="myVideo"></video>
       <div className="container animate__animated animate__fadeInLeft">
         <span className="top_text">HI!</span>
         <h1>I am Shpetim Sedolli</h1>

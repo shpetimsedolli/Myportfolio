@@ -1,22 +1,31 @@
 .Main {
   position: relative;
   height: 100vh;
-  background: url(../../assets/main.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 600px;
   background-position: center center;
   display: flex;
   align-items: center;
 }
-
-h1 {
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* min-width: 100%; */
+  height: 100vh;
+  /* min-height: 100%; */
+  z-index: -100;
+  object-fit: cover;
+}
+.Main h1 {
   font-size: 65px;
-  opacity: 0.8;
+  opacity: 0.9;
+  color: #fff;
   font-weight: bold;
 }
 .top_text,
 .bottom_text {
+  color: #fff;
   font-size: 50px;
   opacity: 0.5;
 }

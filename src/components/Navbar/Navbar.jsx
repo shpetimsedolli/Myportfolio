@@ -49,14 +49,14 @@ const Navbar = () => {
             {toggleMenu ? (
               <RiCloseLine
                 className="closeline"
-                color="#000"
-                size={30}
+                color="#fff"
+                size={32}
                 onClick={() => setToggleMenu(false)}
               />
             ) : (
               <RiMenu3Line
-                color="#000"
-                size={30}
+                color="#fff"
+                size={32}
                 onClick={() => setToggleMenu(true)}
               />
             )}
