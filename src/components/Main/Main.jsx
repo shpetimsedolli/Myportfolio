@@ -10,7 +10,7 @@ const Main = () => {
   });
   return (
     <div className="Main" id="main">
-      <video autoPlay src={video} muted loop id="myVideo"></video>
+      <video autoPlay src={video} muted playsInline loop id="myVideo"></video>
       <div className="container animate__animated animate__fadeInLeft">
         <span className="top_text">HI!</span>
         <h1>I am Shpetim Sedolli</h1>
