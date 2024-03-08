@@ -5,6 +5,7 @@ import box2 from "../../assets/box2.jpg";
 import box3 from "../../assets/box3.jpg";
 import box4 from "../../assets/box4.jpg";
 import box5 from "../../assets/box5.jpg";
+import box6 from "../../assets/box6.jpg";
 import box1click from "../../assets/box1click.png";
 import box2click from "../../assets/box2click.png";
 import box3click from "../../assets/box3click.png";
@@ -134,7 +135,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="box" data-aos="fade-up">
+          <div className="box" data-aos="fade-right">
             <img src={box3} alt="" />
             <div className="overlay">
               <div className="overlay__content">
@@ -153,6 +154,22 @@ const Projects = () => {
                 >
                   Show Full Image
                 </button>
+              </div>
+            </div>
+          </div>
+          <div className="box" data-aos="fade-left">
+            <img src={box6} alt="" />
+            <div className="overlay">
+              <div className="overlay__content">
+                <h3>WeatherApp</h3>
+                <a
+                  className="btn_github"
+                  href="https://github.com/shpetimsedolli/weatherapp"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Code on Github
+                </a>
               </div>
             </div>
           </div>
